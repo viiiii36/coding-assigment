@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order details</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <h3 class="text-center">
+        Main page
+        <small class="text-body-secondary">Tech ABC</small>
+      </h3>
+    <!--Make a navbar list-->
+    <nav class="navbar navbar-expand-md bg-body-tertiary bg-primary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <!--1st navbar item leads to another page-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Manuals.html">Daily to-do list</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tasks
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Signed-off order</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                      Submission Log
+                    </button>
+                </p>
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                      <div class="card card-body" style="width: 300px;">
+                        This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                      </div>
+                    </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <script src="/node_modules/jquery/dist/jquery.js"></script>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

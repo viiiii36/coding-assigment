@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking sheet</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <h1 class="display-3 text-center container">Technician ABC progress form</h1>
+    <!--Create a to-do/status table-->
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr class="container-fluid">
+            <th scope="col">Order number</th>
+            <th scope="col">Quantity planned</th>
+            <th scope="col">Quantity received</th>
+            <th scope="col">Priority for the day</th>
+            <th scope="col">Current Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">203</th>
+            <td>50</td>
+            <td>25</td>
+            <td>
+                <input class="input-group-text form-check-input mt-0" value="" type="checkbox">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">216</th>
+            <td>8</td>
+            <td>8</td>
+            <td>
+                <input class="input-group-text form-check-input mt-0" value="" type="checkbox">
+            </td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <th scope="row">203</th>
+            <td>16</td>
+            <td>10</td>
+            <td>
+                <input class="input-group-text form-check-input mt-0" value="" type="checkbox">
+            </td>
+            <td><input type="text"></td>
+          </tr>
+        </tbody>
+      </table>
+      <!--The button to enable data entry-->
+      <p class="d-inline-flex gap-1">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Submit request to add another order to the plan
+        </button>
+      </p>
+      <!--Open a form so that user can add data to the table-->
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <form>
+                <div class="mb-3">
+                  <label class="form-label">Order number</label>
+                  <input type="number" required id="order-number">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Order Quantity</label>
+                  <input type="number" required id="planned-quantity">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+      </div>
+      <script src="/node_modules/jquery/dist/jquery.js"></script>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
