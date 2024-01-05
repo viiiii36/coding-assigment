@@ -27,19 +27,94 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Tasks
                 </a>
+                <!--Make a dropdown list from navbar-->
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Signed-off order</a></li>
+                  <!--1st item also linked to the previous link-->
+                  <li><a class="nav-link active" aria-current="page" href="Manuals.html">Daily to-do list</a></li>
+                  <li><a class="dropdown-item" href="documentation.html">Signed-off order</a></li>
                 </ul>
               </li>
+              <!--Create a collapse card-->
               <li>
                 <p>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                      Submission Log
+                      Daily Inventory Count Submission form
                     </button>
                 </p>
                     <div class="collapse collapse-horizontal" id="collapseWidthExample">
                       <div class="card card-body" style="width: 300px;">
-                        This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                        <table class="table table-striped table-bordered table-responsive">
+                          <thead>
+                            <tr>
+                              <th class="col">Tech Initial</th>
+                              <th class="col">Date</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>VN</td>
+                              <td>Dec 6, 2023</td>
+                            </tr>
+                            <tr>
+                              <td colspan="4">
+                                <table class="table mb-0">
+                                  <thead>
+                                    <tr>
+                                      <th class="col">Order number</th>
+                                      <th class="col">Active quantity</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="fw-semibold">323</td>
+                                    <td>15</td>
+                                    </tr>
+                                    <!--allow user to input data-->
+                                    <tr>
+                                    <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                    <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                    </tr>
+                                    <tr>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                    </tr>
+                                    <tr>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                    </tr>
+                                    <tr>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                    </tr>
+                                    <tr>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                    </tr>
+                                    <tr>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                    </tr>
+                                    <tr>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                    </tr>
+                                    <tr>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                    </tr>
+                                    <tr>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                      <td><input class="form-check-input mt-0 input-group input-group-lg" value="0" type="number"></td>
+                                    </tr>
+                                  </tbody>
+                                  <tfoot>
+                                    <tr><button type="submit" class="btn btn-primary">Submit</button></tr>
+                                  </tfoot>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                 </li>
